@@ -50,7 +50,8 @@ The packaged files will be in the `out/` directory.
 ---
 
 ## **🖥️ UI Preview**
-> *(Include screenshots of the app in action here!)*
+![image](https://github.com/user-attachments/assets/3469242f-5d77-4e19-b10e-aec0d9319fb5)
+
 
 ---
 
