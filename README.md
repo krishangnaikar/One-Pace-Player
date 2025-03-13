@@ -23,7 +23,7 @@ This **Electron-based video player** provides a seamless way to watch the **One 
 ### **macOS & Linux**
 1. Clone this repository:
    ```sh
-   git clone https://github.com/your-username/onepace-electron-player.git
+   git clone https://github.com/krishangnaikar/One-Pace-Player.git
    cd onepace-electron-player
    ```
 2. Install dependencies:
