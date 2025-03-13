@@ -1,4 +1,4 @@
-### **README for One Pace Electron Video Player**
+# **One Pace Electron Video Player**
 This **Electron-based video player** provides a seamless way to watch the **One Pace** anime series, integrating directly with **PixelDrain** for streaming episodes.
 
 ---
@@ -12,22 +12,28 @@ This **Electron-based video player** provides a seamless way to watch the **One 
 
 ---
 
-## **🚀 Installation**
-### **1️⃣ Clone the Repository**
-```sh
-git clone https://github.com/your-username/onepace-electron-player.git
-cd onepace-electron-player
-```
+## **⬇️ Download & Install**
+### **Windows (.exe)**
+🚀 **[Download the latest .exe installer](https://drive.google.com/file/d/1dhL0Ge_U7X37m30RzLwighSa0Ezl3TAh/view?usp=sharing)**  
 
-### **2️⃣ Install Dependencies**
-```sh
-npm install
-```
+1. Click the download link above.
+2. Run the `.exe` file and install the app.
+3. Open the player and start watching!
 
-### **3️⃣ Run the App**
-```sh
-npm start
-```
+### **macOS & Linux**
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/your-username/onepace-electron-player.git
+   cd onepace-electron-player
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Run the player:
+   ```sh
+   npm start
+   ```
 
 ---
 
@@ -50,7 +56,7 @@ The packaged files will be in the `out/` directory.
 ---
 
 ## **🖥️ UI Preview**
-![image](https://github.com/user-attachments/assets/3469242f-5d77-4e19-b10e-aec0d9319fb5)
+![image](https://github.com/user-attachments/assets/05e88adf-0b2b-403a-87e3-c75e7e826db1)
 
 
 ---
@@ -73,3 +79,12 @@ If you run into issues, please create an **issue** on GitHub.
 ---
 
 🚀 **Now, anyone can enjoy One Pace with an optimized desktop experience!** 🎬🔥
+
+---
+
+### **🔹 Next Steps**
+- **Upload your `.exe` file** to **GitHub Releases** (or Google Drive, Dropbox).
+- **Replace `your-username` with your actual GitHub username.**
+- **Add a UI preview (screenshots/gifs) for a better user experience!**  
+
+Let me know if you need help setting up the download link! 🚀🔥
