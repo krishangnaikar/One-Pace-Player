@@ -24,7 +24,7 @@ This **Electron-based video player** provides a seamless way to watch the **One 
 1. Clone this repository:
    ```sh
    git clone https://github.com/krishangnaikar/One-Pace-Player.git
-   cd onepace-electron-player
+   cd One-Pace-Player
    ```
 2. Install dependencies:
    ```sh
