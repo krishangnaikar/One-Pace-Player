@@ -14,7 +14,7 @@ This **Electron-based video player** provides a seamless way to watch the **One 
 
 ## **⬇️ Download & Install**
 ### **Windows (.exe)**
-🚀 **[Download the latest .exe installer](https://drive.google.com/file/d/1dhL0Ge_U7X37m30RzLwighSa0Ezl3TAh/view?usp=sharing)**  
+🚀 **[Download the latest .exe installer](https://drive.google.com/file/d/11yW4fh-8XhlGzzyoGta8sMTfAMw2WoYi/view?usp=drive_link)**  
 
 1. Click the download link above.
 2. Run the `.exe` file and install the app.
