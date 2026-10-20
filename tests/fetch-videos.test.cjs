@@ -26,3 +26,13 @@ test('API failure returns an empty result',async()=>{
   const fetchVideos=load(async()=>{throw Error('offline');});
   assert.equal((await fetchVideos(['https://pixeldrain.com/l/abc'])).length,0);
 });
+
+for (const [title, expected] of [['My videos','My videos'],['','Folder abc'],[undefined,'Folder abc']]) {
+  test(`folder title ${String(title)} preserves its files`,async()=>{
+    const fetchVideos=load(async()=>({data:{title,files:[{id:'one',name:'Special.mkv'}]}}));
+    const folders=await fetchVideos(['https://pixeldrain.com/l/abc']);
+    assert.equal(folders.length,1);
+    assert.equal(folders[0].folderName,expected);
+    assert.equal(folders[0].files[0].url,'https://pixeldrain.com/api/file/one');
+  });
+}
