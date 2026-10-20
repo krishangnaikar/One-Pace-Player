@@ -28,7 +28,8 @@ ipcMain.handle('fetch-videos', async (_, folderLinks) => {
             const response = await axios.get(`https://pixeldrain.com/api/list/${folderId}`);
 
             if (response.data) {
-                let folderName = response.data.title.split("]")[1].split("[")[0] || `Folder ${folderId}`; // Use folder name if available
+                const title = typeof response.data.title === "string" ? response.data.title : "";
+                const folderName = (title.includes("]") ? title.split("]")[1].split("[")[0] : title) || `Folder ${folderId}`;
                 const fileLinks = response.data.files.map((file, index) => {
                     const match = file.name.match(episodeRegex);
                     const episode = match ? match[1] : file.name; // Default to full name if no match
