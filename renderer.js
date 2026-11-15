@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         let lastPlayedTime = lastPlayedData.time || 0;
         let lastPlayedVideo = null;
         let currentActive = null;
-        let allVideos = folders.flatMap(folder => folder.files);
+        const allVideos = folders.flatMap(folder => folder.files.map(video => ({ ...video, folderName: folder.folderName })));
 
         // Clear any previously active classes before assigning new ones
         document.querySelectorAll('.active').forEach(el => el.classList.remove('active'));
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
 
         videoPlayer.addEventListener('ended', () => {
-            let nextIndex = allVideos.findIndex(video => video.index === lastPlayedIndex) + 1;
+            const nextIndex = allVideos.findIndex(video => video.folderName === lastPlayedFolder && video.index === lastPlayedIndex) + 1;
             if (nextIndex < allVideos.length) {
                 lastPlayedIndex = allVideos[nextIndex].index;
                 lastPlayedFolder = allVideos[nextIndex].folderName;
